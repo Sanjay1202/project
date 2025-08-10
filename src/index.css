@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding-top: 72px; /* Increased for better spacing */
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+}
+
+.hero-section {
+  /* Adjust for the body's top padding to remove the gap */
+  margin-top: -72px;
+  padding-top: 72px;
+  min-height: 100vh; /* Fill the entire viewport height */
+}
+
+.hero-image-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* Features Section */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
+}
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+.bg-primary-soft { background-color: rgba(var(--bs-primary-rgb), 0.1); }
+.bg-success-soft { background-color: rgba(var(--bs-success-rgb), 0.1); }
+.bg-warning-soft { background-color: rgba(var(--bs-warning-rgb), 0.1); }
+.bg-info-soft { background-color: rgba(var(--bs-info-rgb), 0.1); }
+.bg-danger-soft { background-color: rgba(var(--bs-danger-rgb), 0.1); }
+
+/* Courses Section */
+#courses .card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#courses .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+#courses .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+#courses .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit the text to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* About Page */
+.about-stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.08) !important;
+}
+.feature-icon-lg {
+  width: 80px;
+  height: 80px;
+}
