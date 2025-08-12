@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  GraduationCap,
   Facebook,
   Twitter,
   Linkedin,
@@ -13,6 +12,8 @@ import About from "./About";
 import Courses from "./courses";
 import Features from "./Features";
 import Contact from "./Contact";
+import SsdLogo from "./logo/SSD.jpg";
+import logo_bg from "./logo/logo-bg.png"; // Assuming you have a logo background image
 
 function App() {
   return (
@@ -21,7 +22,13 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">
-            <GraduationCap className="d-inline-block me-2" /> SSD Education
+            <img
+              src={logo_bg}
+              alt="SSD Education Logo"
+              style={{ height: "30px", width: "auto" }}
+              className="d-inline-block align-top me-2 rounded-circle"
+            />
+            SSD Education
           </Link>
           <button
             className="navbar-toggler"
@@ -77,9 +84,14 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 mb-4">
-              <h5 className="mb-3">
-                <GraduationCap className="d-inline-block me-2" />
-                SSD Education
+              <h5 className="mb-3 d-flex align-items-center">
+                <img
+                  src={SsdLogo}
+                  alt="SSD Education Logo"
+                  style={{ height: "24px", width: "auto" }}
+                  className="me-2 rounded-circle"
+                />
+                <span>SSD Education</span>
               </h5>
               <p className="lead mb-4">
                 Empowering learners worldwide with quality education and

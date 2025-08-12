@@ -8,7 +8,6 @@ import {
   Twitter,
   Linkedin,
   Instagram,
-  GraduationCap,
 } from "lucide-react";
 
 const Contact = () => {
