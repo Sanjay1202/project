@@ -12,8 +12,7 @@ import About from "./About";
 import Courses from "./courses";
 import Features from "./Features";
 import Contact from "./Contact";
-import SsdLogo from "./logo/SSD.jpg";
-import logo_bg from "./logo/logo-bg.png"; // Assuming you have a logo background image
+import SsdLogo from "./logo/logo-bg.png";
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">
             <img
-              src={logo_bg}
+              src={SsdLogo}
               alt="SSD Education Logo"
               style={{ height: "30px", width: "auto" }}
               className="d-inline-block align-top me-2 rounded-circle"

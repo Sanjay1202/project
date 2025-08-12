@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SsdLogo from "./logo/SSD.jpg";
 
 const Home = () => (
   <section
@@ -30,7 +31,7 @@ const Home = () => (
         <div className="col-lg-6 mt-5 mt-lg-0">
           <div className="position-relative">
             <img
-              src="/src/logo/SSD.jpg"
+              src={SsdLogo}
               alt="SSD Edutech Logo"
               className="img-fluid rounded-circle shadow-lg border border-5 border-white mx-auto d-block hero-image-animation"
               style={{ maxWidth: "400px" }}
